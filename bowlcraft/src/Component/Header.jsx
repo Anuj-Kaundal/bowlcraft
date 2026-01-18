@@ -6,16 +6,17 @@ function Header() {
     const [MobileMenu, setMobileMenu] = useState(false);
     return (
         <div>
-            <div className='fixed w-full top-0 z-50 isolate left-0 bg-white/70 backdrop-blur-sm flex justify-between items-center p-7 border-b-2 border-gray-400'>
+            <div className='fixed w-full top-0 z-50 isolate left-0 bg-white/70 backdrop-blur-sm flex justify-between items-center p-2 border-b-2 border-gray-400'>
                 {/* ""z-50 isolate"" jab koi section hover par header ko overley krta hai  usko rokne k liye */}
-                <div className='ml-15'>
-                    <img src="bowlcraft.png" alt="" height={50} width={100}/>
+                <div className='ml-4 lg:ml-15'>
+                    <img src="/logo.png" alt="" height={100} width={100} className='select-none pointer-events-none'/>
+                    {/* ""select-none pointer-events-none"" with this right click not working and image can not be saved */}
                 </div>
 
                 <div>
                     <ul className='hidden lg:flex font-bold gap-10'>
-                        <li>Menu</li>
-                        <li>Corporate</li>
+                        <li className='cursor-pointer'>Menu</li>
+                        <li className='cursor-pointer'>Corporate</li>
                         <li>About</li>
                         <li>Blogs</li>
                     </ul>
@@ -34,8 +35,8 @@ function Header() {
                 </div>
                 {
                     MobileMenu ?
-                        <IoClose className='lg:hidden text-3xl' onClick={() => setMobileMenu(false)} /> :
-                        <GiHamburgerMenu className='lg:hidden text-3xl' onClick={() => setMobileMenu(true)} />
+                        <IoClose className='lg:hidden text-3xl mr-4' onClick={() => setMobileMenu(false)} /> :
+                        <GiHamburgerMenu className='lg:hidden text-3xl mr-4' onClick={() => setMobileMenu(true)} />
                 }
                 {
                 MobileMenu && (

@@ -1,18 +1,20 @@
-import { useState } from 'react'
+import { Children, useState } from 'react'
 import './App.css'
 import Header from './Component/Header'
-import Home from './Component/Home'
 import Footer from './Component/Footer'
+import Home from './Component/Home'
+import Corporate from './Component/Corporate'
 import React from 'react'
+import About from './Component/About'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Header/>
-      <Home/>
-      <Footer/>
+    <Header/>
+    <Home/>
+    {/* <Corporate/> */}
+    {/* <About/> */}
+    <Footer/>
     </>
   )
 }

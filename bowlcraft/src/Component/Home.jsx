@@ -8,9 +8,9 @@ import { GoDotFill } from "react-icons/go";
 // console.log(data)
 function Home() {
   return (
-    <div className='bg-[#e5e7eb44]'>
+    <div className='bg-[#e5e7eb44] select-none pointer-events-none'>
       {/* hero section start */}
-      <div className='lg:pt-40 p-10 lg:p-20 flex flex-col lg:flex-row'>
+      <div className='lg:pt-40 pt-30 p-10 lg:p-20 flex flex-col lg:flex-row'>
         <div className='lg:w-1/2 space-y-10'>
           <h1 className='text-[#5CD65C] text-2xl lg:text-4xl'>𝓌𝑒 𝓈𝓅𝑒𝒶𝓀 𝒻𝓁𝓊𝑒𝓃𝓉 𝒻𝑜𝑜𝒹</h1>
           <h1 className='lg:text-6xl text-3xl font-bold'>NO MATTER WHICH<br className="hidden lg:block" /> CORNER OF THE<br className="hidden md:block lg:block" /> WORLD <span className='text-[#F9CE10]'>𝒾𝓉'𝓈 𝒻𝓇𝑜𝓂.</span></h1>

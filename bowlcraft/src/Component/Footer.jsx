@@ -7,8 +7,8 @@ function Footer() {
       <div className='bg-[#1A1A1A] text-white flex flex-wrap gap-10 justify-between p-10'>
         {/* first col start */}
         <div>
-          <h1 >logo</h1>
-          <p className='text-sm space-y-2 opacity-80'>Bringing you fresh, global cuisine delivered<br className='hidden md:block lg:block' /> right to your door. Every bowl tells a story of<br className='hidden md:block lg:block' /> flavor, quality, and care.</p>
+          <img src="/footerlogo.png" alt="" height={200} width={200} className='select-none pointer-events-none rounded-xl'/>
+          <p className='text-sm space-y-2 opacity-80 pt-5'>Bringing you fresh, global cuisine delivered<br className='hidden md:block lg:block' /> right to your door. Every bowl tells a story of<br className='hidden md:block lg:block' /> flavor, quality, and care.</p>
           <div className='flex flex-wrap'>
             <h1>instagram</h1>
             <h1>facebook</h1>
