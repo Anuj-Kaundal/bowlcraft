@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import { FaCartArrowDown } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import {useNavigate} from 'react-router-dom'
 function Header() {
+    const navigate = useNavigate();
     const [MobileMenu, setMobileMenu] = useState(false);
     return (
         <div>
@@ -15,15 +17,15 @@ function Header() {
 
                 <div>
                     <ul className='hidden lg:flex font-bold gap-10'>
-                        <li className='cursor-pointer'>Menu</li>
-                        <li className='cursor-pointer'>Corporate</li>
-                        <li>About</li>
-                        <li>Blogs</li>
+                        <li className='cursor-pointer' onClick={()=>navigate('/menu')}>Menu</li>
+                        <li className='cursor-pointer' onClick={()=>navigate('/corporate')}>Corporate</li>
+                        <li className='cursor-pointer'onClick={()=>navigate('/about')}>About</li>
+                        <li className='cursor-pointer'onClick={()=>navigate('/blog')}>Blogs</li>
                     </ul>
                 </div>
 
                 <div className='hidden lg:flex items-center font-medium gap-10'>
-                    <button className='bg-[#F9CE10] px-2 py-1 rounded-md'>
+                    <button className='bg-[#F9CE10] px-2 cursor-pointer py-1 rounded-md'>
                         Order Now
                     </button>
 
@@ -31,7 +33,7 @@ function Header() {
                         <FaCartArrowDown />
                     </span>
 
-                    <button>Sign In</button>
+                    <button className='cursor-pointer font-bold mr-4 lg:mr-18'>Sign In</button>
                 </div>
                 {
                     MobileMenu ?
@@ -42,10 +44,10 @@ function Header() {
                 MobileMenu && (
                     <div className="absolute top-full left-0 w-full bg-white lg:hidden border-t">
                         <ul className="flex flex-col items-center gap-6 py-6 font-bold">
-                            <li onClick={() => setMobileMenu(false)}>Menu</li>
-                            <li onClick={() => setMobileMenu(false)}>Corporate</li>
-                            <li onClick={() => setMobileMenu(false)}>About</li>
-                            <li onClick={() => setMobileMenu(false)}>Blogs</li>
+                            <li onClick={() => { navigate('/menu'); setMobileMenu(false)}}>Menu</li>
+                            <li onClick={() => { navigate('/corporate'); setMobileMenu(false)}}>Corporate</li>
+                            <li onClick={() => { navigate('/about'); setMobileMenu(false)}}>About</li>
+                            <li onClick={() => { navigate('/blog'); setMobileMenu(false)}}>Blogs</li>
 
                             <button className="bg-[#F9CE10] px-4 py-2 rounded-md">
                                 Order Now
