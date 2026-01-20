@@ -1,4 +1,3 @@
-import { FaPlus } from "react-icons/fa";
 const menudata = [
     {
         id: 1,
@@ -9,7 +8,7 @@ const menudata = [
         disprice: "₹98",
         price: "₹299",
         discout: "(67% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -21,7 +20,7 @@ const menudata = [
         disprice: "₹98",
         price: "₹299",
         discout: "(67% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -33,7 +32,7 @@ const menudata = [
         disprice: "₹118",
         price: "₹399",
         discout: "(65% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -45,7 +44,7 @@ const menudata = [
         disprice: "₹118",
         price: "₹299",
         discout: "(61% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -57,7 +56,7 @@ const menudata = [
         disprice: "₹168",
         price: "₹399",
         discout: "(58% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -69,7 +68,7 @@ const menudata = [
         disprice: "₹118",
         price: "₹299",
         discout: "(61% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -81,7 +80,7 @@ const menudata = [
         disprice: "₹118",
         price: "₹299",
         discout: "(61% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -93,7 +92,7 @@ const menudata = [
         disprice: "₹120",
         price: "₹299",
         discout: "(60% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -105,7 +104,7 @@ const menudata = [
         disprice: "₹120",
         price: "₹299",
         discout: "(60% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -117,7 +116,7 @@ const menudata = [
         disprice: "₹120",
         price: "₹299",
         discout: "(60% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -129,7 +128,7 @@ const menudata = [
         disprice: "₹120",
         price: "₹299",
         discout: "(60% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -141,7 +140,7 @@ const menudata = [
         disprice: "₹120",
         price: "₹299",
         discout: "(60% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -153,7 +152,7 @@ const menudata = [
         disprice: "₹120",
         price: "₹299",
         discout: "(60% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -165,7 +164,7 @@ const menudata = [
         disprice: "₹120",   
         price: "₹299",
         discout: "(60% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -177,7 +176,7 @@ const menudata = [
         disprice: "₹299",
         price: "",
         discout: "",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -189,7 +188,7 @@ const menudata = [
         disprice: "₹249",
         price: "",
         discout: "",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -201,7 +200,7 @@ const menudata = [
         disprice: "₹249",
         price: "",
         discout: "",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     },
     {
@@ -213,7 +212,7 @@ const menudata = [
         disprice: "₹98",
         price: "₹299",
         discout: "(67% OFF)",
-        cart: "FaPlus Add to Cart",
+        cart: "Add to Cart",
         custom: "Custom  According To The Customer's"
     }
 ]

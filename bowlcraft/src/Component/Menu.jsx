@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import menudata from './menudata.js'
+import { IoMdCloseCircle } from "react-icons/io";
+import { FaPlus } from "react-icons/fa";
+import { Navigate, useNavigate } from 'react-router';
 console.log(menudata)
 function Menu() {
+    const navigate = useNavigate();
+    const [Open, setOpen] = useState(false);
     return (
         <div>
             {/* main div start */}
@@ -47,7 +52,7 @@ function Menu() {
                 </div>
                 {/* filter section start */}
                 {/* menu section start */}
-                <div className='p-20'>
+                <div className='lg:p-20 p-10'>
                     <button className='bg-[#F9CE10] cursor-pointer rounded-full pl-5 pr-5 p-2'>All</button>
                     <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 pt-8'>
                         {
@@ -57,7 +62,7 @@ function Menu() {
                                         <img src={menu.img} alt="" className='rounded-t-xl object-cover transition-transform duration-400 ease-out hover:scale-105 cursor-pointer' />
                                         <div className='space-y-2 p-5'>
                                             <div className='flex justify-between'>
-                                                <h1 className='truncate w-48 uppercase text-lg font-bold cursor-pointer'>{menu.title}</h1>
+                                                <h1 className='truncate w-48 uppercase text-lg font-bold cursor-pointer' onClick={() => navigate(`/productdetails${menu.id}`)}>{menu.title}</h1>
                                                 <button className='font-medium text-sm border border-gray-200 pl-2 pr-2 rounded-full'>{menu.cal}</button>
                                             </div>
                                             <p className='line-clamp-2'>{menu.disc}</p>
@@ -66,7 +71,7 @@ function Menu() {
                                                 <h2 className='line-through'>{menu.price}</h2>
                                                 <h3 className='text-[#5CD65C]'>{menu.discout}</h3>
                                             </div>
-                                            <button className='w-full bg-[#F9CE10] p-2 rounded-md'>{menu.cart}</button>
+                                            <button className='w-full bg-[#F9CE10] p-2 font-bold rounded-md cursor-pointer flex justify-center items-center gap-5' onClick={() => setOpen(true)}>{menu.cart}<FaPlus className='mt-1'/></button>
                                             <h1 className='text-center text-sm'>{menu.custom}</h1>
                                         </div>
                                     </div>
@@ -78,6 +83,31 @@ function Menu() {
                 {/* menu section end */}
             </div>
             {/* main div end */}
+            {/* popup section */}
+            {
+                Open && (
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
+
+                        {/* Modal Box */}
+                        <div className="relative bg-red-600 rounded-2xl shadow-2xl p-6 max-w-md w-[90%] animate-scaleIn">
+
+                            {/* Close Button */}
+                            <IoMdCloseCircle
+                                onClick={() => setOpen(false)}
+                                className="absolute -top-4 -right-4 text-white text-4xl cursor-pointer hover:scale-110 transition"
+                            />
+
+                            {/* Image */}
+                            <img
+                                src="/undermain.webp"
+                                alt="Under Maintenance"
+                                className="w-full rounded-xl"
+                            />
+                        </div>
+                    </div>
+                )
+            }
+
         </div>
     )
 }

@@ -10,6 +10,7 @@ import Blog from './Component/Blog'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 import Applayout from './Component/Applayout'
 import Menu from './Component/Menu'
+import Productdetails from './Component/Productdetails'
 const router =createBrowserRouter([
   {
     path : '/',
@@ -20,20 +21,24 @@ const router =createBrowserRouter([
         element : <Home/>
       },
       {
-        path : '/menu',
+        path : 'menu',
         element : <Menu/>
       },
       {
-        path : '/corporate',
+        path : 'corporate',
         element : <Corporate/>
       },
       {
-        path : '/about',
+        path : 'about',
         element : <About/>
       },
       {
-        path : '/blog',
+        path : 'blog',
         element : <Blog/>
+      },
+      {
+        path : 'productdetails/:product_details',
+        element : <Productdetails />
       }
     ]
   }
