@@ -7,7 +7,7 @@ function Footer() {
       <div className='bg-[#1A1A1A] text-white flex flex-wrap gap-10 justify-between p-10'>
         {/* first col start */}
         <div>
-          <img src="/footerlogo.png" alt="" height={200} width={200} className='select-none pointer-events-none rounded-xl'/>
+          <img src="/footerlogo.png" alt="" height={200} width={200} className='select-none pointer-events-none rounded-xl' />
           <p className='text-sm space-y-2 opacity-80 pt-5'>Bringing you fresh, global cuisine delivered<br className='hidden md:block lg:block' /> right to your door. Every bowl tells a story of<br className='hidden md:block lg:block' /> flavor, quality, and care.</p>
           <div className='flex flex-wrap'>
             <h1>instagram</h1>
@@ -55,7 +55,18 @@ function Footer() {
       {/* footer flex div end */}
       <div className="bg-[#1A1A1A]">
         {/* border */}
-        <div className="border-t border-gray-500 w-[90%] mx-auto"></div>
+        {/* <div className="border-t border-gray-500 w-[90%] mx-auto"></div> */}
+        {/* creator name */}
+        <div className="flex items-center justify-between gap-4 p-10">
+          <div className="flex-1 border-t border-gray-500"></div>
+
+          <h1 className="text-xl font-bold text-white">
+            Created By "ANUJ KAUNDAL"
+          </h1>
+
+          <div className="flex-1 border-t border-gray-500"></div>
+        </div>
+
 
         {/* text */}
         <div className="w-[90%] mx-auto text-center py-8">
