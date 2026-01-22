@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import menudata from './menudata.js'
 import { IoMdCloseCircle } from "react-icons/io";
 import { FaPlus } from "react-icons/fa";
-import { Navigate, useNavigate } from 'react-router';
-console.log(menudata)
+import { Navigate, useNavigate } from 'react-router-dom';
+// console.log(menudata)
 function Menu() {
-    const navigate = useNavigate();
     const [Open, setOpen] = useState(false);
+    const Navigate = useNavigate()
     return (
         <div>
             {/* main div start */}
@@ -62,7 +62,7 @@ function Menu() {
                                         <img src={menu.img} alt="" className='rounded-t-xl object-cover transition-transform duration-400 ease-out hover:scale-105 cursor-pointer' />
                                         <div className='space-y-2 p-5'>
                                             <div className='flex justify-between'>
-                                                <h1 className='truncate w-48 uppercase text-lg font-bold cursor-pointer' onClick={() => navigate(`/productdetails${menu.id}`)}>{menu.title}</h1>
+                                                <h1 className='truncate w-48 uppercase text-lg font-bold cursor-pointer' onClick={() => Navigate(`/productdetails/${menu.id}`)}>{menu.title}</h1> {/* remember that "/productdetails/" this path is always same as the path define in app.jsx path */}
                                                 <button className='font-medium text-sm border border-gray-200 pl-2 pr-2 rounded-full'>{menu.cal}</button>
                                             </div>
                                             <p className='line-clamp-2'>{menu.disc}</p>

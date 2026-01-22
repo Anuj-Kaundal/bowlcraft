@@ -10,12 +10,12 @@ function Corporate() {
       <div className='lg:pt-40 pt-30 p-10 space-y-5 text-center'>
         <h1 className='text-4xl font-bold'>CORPORATE <span className='text-[#F9CE10]'>CATERING</span></h1>
         <p className='text-gray-500 text-2xl'>Fuel your team with fresh, global flavors delivered right to your office</p>
-        <div className='flex justify-center gap-30'>
-          <div>
+        <div className='flex-row lg:flex justify-center gap-30'>
+          <div className='pb-5'>
             <h1 className='text-[#F9CE10] text-3xl font-bold pb-3'>50+</h1>
             <p>Minimum Order</p>
           </div>
-          <div>
+          <div className='pb-5'>
             <h1 className='text-[#F9CE10] text-3xl font-bold pb-3'>24h</h1>
             <p>Advance Notice</p>
           </div>
@@ -27,13 +27,13 @@ function Corporate() {
       </div>
       {/* Corporate Catering section end */}
       {/* Bulk Order Quote section start */}
-      <div className='mt-30 space-y-5 text-center'>
+      <div className='lg:mt-30 space-y-5 text-center p-10'>
         <h1 className='text-4xl font-bold'>GET YOUR <span className='text-[#F9CE10]'>BULK ORDER</span> QUOTE </h1>
         <p className='text-gray-500 text-xl'>Fill out the form below and our corporate catering team will get back to you<br className='hidden md:block lg:block' /> within 24 hours</p>
       </div>
       {/* Bulk Order Quote section end */}
       {/* Bulk Order Inquiry section start */}
-      <div className='flex justify-center p-20'>
+      <div className='flex justify-center lg:p-20 p-10'>
         <div className='p-5 rounded-2xl shadow-2xl shadow-pink-300'>
           <h1 className='font-semibold tracking-tight text-2xl pb-5'>BULK ORDER INQUIRY</h1>
           <p className='text-xl pb-5'>Hungering for ambition is more satisfying over a good meal.</p>

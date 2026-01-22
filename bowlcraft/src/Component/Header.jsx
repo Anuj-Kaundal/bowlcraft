@@ -25,7 +25,7 @@ function Header() {
                 </div>
 
                 <div className='hidden lg:flex items-center font-medium gap-10'>
-                    <button className='bg-[#F9CE10] px-2 cursor-pointer py-1 rounded-md'>
+                    <button className='bg-[#F9CE10] px-2 cursor-pointer py-1 rounded-md' onClick={() =>alert('website under work')}>
                         Order Now
                     </button>
 

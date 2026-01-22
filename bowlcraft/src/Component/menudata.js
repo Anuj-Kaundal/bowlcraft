@@ -1,7 +1,7 @@
 const menudata = [
     {
         id: 1,
-        img: "mexican.jpg",
+        img: "/mexican.jpg",
         title: "Mexican Burrito Bowl",
         cal: "291 cal | Calorie",
         disc: "Here is our all time favourite signature burrito bowl. Paneer steaks, infused with hot and tangy habanero-...",
@@ -13,7 +13,7 @@ const menudata = [
     },
     {
         id: 2,
-        img: "ultimate.jpg",
+        img: "/ultimate.jpg",
         title: "Ultimate Burrito Bowl",
         cal: "370 cal | Calorie",
         disc: "This bowl contains mexican tomato rice loaded with toppings to give you a full-satisfying meal. Fresh paneer-...",
@@ -25,7 +25,7 @@ const menudata = [
     },
     {
         id: 3,
-        img: "chipotle.jpg",
+        img: "/chipotle.jpg",
         title: "Chipotle Paneer Burrito Bowl",
         cal: "Continental",
         disc: "A perfect blend of bold and fresh! Smoky Peri Peri paneer, zesty cilantro rice, and hearty beans come together with...",
@@ -37,7 +37,7 @@ const menudata = [
     },
     {
         id: 4,
-        img: "honey.jpg",
+        img: "/honey.jpg",
         title: "Honey Mustard Cremosa Burrito",
         cal: "Continental",
         disc: "Cilantro rice topped with sweet and tangy honey mustard sauce, grilled paneer, mixed veggie salad, sour cream, and more...",
@@ -49,7 +49,7 @@ const menudata = [
     },
     {
         id: 5,
-        img: "cheesey.jpg",
+        img: "/cheesey.jpg",
         title: "Cheesey Double XL Burrito",
         cal: "Continental",
         disc: "Enjoy a hearty base of vibrant cilantro lime rice, generously topped with a double serving of our delicious grilled paneer, cheese sauce, and veggies...",
@@ -61,7 +61,7 @@ const menudata = [
     },
     {
         id: 6,
-        img: "cremosa.jpg",
+        img: "/cremosa.jpg",
         title: "Cremosa Paneer Burrito",
         cal: "Continental",
         disc: "A hearty bowl of cilantro rice topped with a creamy mix of béchamel and tomato sauce, topped with perfectly grilled paneer and fresh veggies...",
@@ -73,7 +73,7 @@ const menudata = [
     },
     {
         id: 7,
-        img: "chargrilled.jpg",
+        img: "/chargrilled.jpg",
         title: "Chargrilled Moroccan Cottage Burrito",
         cal: "Continental",
         disc: "Enjoy the refreshing flavors of this Middle Eastern-inspired bowl. Grilled cottage cheese cubes and peppers paired with aromatic spices...",
@@ -85,7 +85,7 @@ const menudata = [
     },
     {
         id: 8,
-        img: "boston.jpg",
+        img: "/boston.jpg",
         title: "Boston Grill Chicken Burrito",
         cal: "Continental",
         disc: "Savor a hearty bowl layered with zesty cilantro rice and tender herb-grilled chicken for a wholesome and satisfying meal...",
@@ -97,7 +97,7 @@ const menudata = [
     },
     {
         id: 9,
-        img: "cincinnati.jpg",
+        img: "/cincinnati.jpg",
         title: "Cincinnati Chili Burrito Bowl",
         cal: "Continental",
         disc: "Zesty cilantro rice sets the base for a burst of flavors, topped with spicy peri peri paneer that delivers a bold taste...",
@@ -109,7 +109,7 @@ const menudata = [
     },
     {
         id: 10,
-        img: "philadelphia.jpg",
+        img: "/philadelphia.jpg",
         title: "Philadelphia Cheesesteak Burrito",
         cal: "Continental",
         disc: "Enjoy a vibrant and satisfying bowl layered with zesty cilantro rice, topped with tender herb-grilled chicken and rich cheese sauce...",
@@ -121,7 +121,7 @@ const menudata = [
     },
     {
         id: 11,
-        img: "rio.jpg",
+        img: "/rio.jpg",
         title: "Rio De Janeiro Burrito Bowl",
         cal: "Continental",
         disc: "Tangy cilantro rice forms the base, topped with tender herb-grilled paneer for a flavorful bite packed with freshness...",
@@ -133,7 +133,7 @@ const menudata = [
     },
     {
         id: 12,
-        img: "vienna.jpg",
+        img: "/vienna.jpg",
         title: "Vienna Wiener Schnitzel Burrito",
         cal: "Continental",
         disc: "A vibrant fusion feast starts with zesty cilantro rice, layered with crispy fried sausage bringing a hearty and indulgent flavor...",
@@ -145,7 +145,7 @@ const menudata = [
     },
     {
         id: 13,
-        img: "pomodoro.jpg",
+        img: "/pomodoro.jpg",
         title: "Pomodoro Tuscan Burrito Bowl",
         cal: "Continental",
         disc: "Zesty cilantro rice topped with crispy crumb-fried paneer, savory hi-protein black bean taqueria, and fresh pico de gallo...",
@@ -157,7 +157,7 @@ const menudata = [
     },
     {
         id: 14,
-        img: "german.jpg",
+        img: "/german.jpg",
         title: "German Crispy Potato Burrito",
         cal: "Continental",
         disc: "Crispy fried potato adds satisfying crunch to a base of zesty cilantro rice. Hearty hi-protein black bean taqueria completes the bowl...",
@@ -169,7 +169,7 @@ const menudata = [
     },
     {
         id: 15,
-        img: "teriyaki.jpg",
+        img: "/teriyaki.jpg",
         title: "Teriyaki Chicken Rice Bowl",
         cal: "Asian",
         disc: "With our Teriyaki Rice Bowl is an all time favourite meal with our guests. Diced, grilled chicken tossed with veggies in rich teriyaki sauce...",
@@ -181,7 +181,7 @@ const menudata = [
     },
     {
         id: 16,
-        img: "sunny.jpg",
+        img: "/sunny.jpg",
         title: "Sunny Side Egg Fried Rice",
         cal: "Asian",
         disc: "Fluffy rice tossed with carrots, beans, and soft scrambled eggs for that classic wok flavor, topped with a perfectly fried egg...",
@@ -193,7 +193,7 @@ const menudata = [
     },
     {
         id: 17,
-        img: "friedegg.jpg",
+        img: "/friedegg.jpg",
         title: "Fried Egg Teriyaki Noodles",
         cal: "Asian",
         disc: "Wok-tossed noodles loaded with scrambled egg, peppers, onions, cabbage, and carrots — all glazed in a rich teriyaki sauce...",
@@ -205,7 +205,7 @@ const menudata = [
     },
     {
         id: 18,
-        img: "dan-dan.jpg",
+        img: "/dan-dan.jpg",
         title: "Dan Dan Chicken Noodles",
         cal: "653 cal | Low Calorie",
         disc: "Minced chicken cooked in a piquant broth of chicken stock, Shaoxing wine, Hoisin sauce, and Sichuan spices for a bold kick...",

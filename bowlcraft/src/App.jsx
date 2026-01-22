@@ -21,24 +21,24 @@ const router =createBrowserRouter([
         element : <Home/>
       },
       {
-        path : 'menu',
+        path : '/menu',
         element : <Menu/>
       },
       {
-        path : 'corporate',
+        path : '/corporate',
         element : <Corporate/>
       },
       {
-        path : 'about',
+        path : '/about',
         element : <About/>
       },
       {
-        path : 'blog',
+        path : '/blog',
         element : <Blog/>
       },
       {
-        path : 'productdetails/:product_details',
-        element : <Productdetails />
+        path : '/productdetails/:id', // :id is used to make dynamic route so this is also same as id use in useParams in productdetails.jsx(jis page me details show karvani hogi) 
+        element : <Productdetails/>
       }
     ]
   }
