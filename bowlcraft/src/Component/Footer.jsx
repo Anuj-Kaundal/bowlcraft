@@ -20,12 +20,12 @@ function Footer() {
         <div>
           <h1 className='font-semibold text-2xl pb-2'>Quick Links</h1>
           <ul className='text-sm space-y-2 opacity-80'>
-            <li>Menu</li>
-            <li>Locations</li>
-            <li>About Us</li>
-            <li>Corporate Ordering</li>
-            <li>Bulk Order</li>
-            <li>Blogs</li>
+            <li className='cursor-pointer'>Menu</li>
+            <li className='cursor-pointer'>Locations</li>
+            <li className='cursor-pointer'>About Us</li>
+            <li className='cursor-pointer'>Corporate Ordering</li>
+            <li className='cursor-pointer'>Bulk Order</li>
+            <li className='cursor-pointer'>Blogs</li>
           </ul>
         </div>
         {/* 2nd end */}
@@ -33,9 +33,9 @@ function Footer() {
         <div>
           <h1 className='font-semibold text-2xl pb-2'>Support</h1>
           <ul className='text-sm space-y-2 opacity-80'>
-            <li>Returns & Refunds</li>
-            <li>Privacy Policy</li>
-            <li>Terms</li>
+            <li className='cursor-pointer'>Returns & Refunds</li>
+            <li className='cursor-pointer'>Privacy Policy</li>
+            <li className='cursor-pointer'>Terms</li>
           </ul>
         </div>
         {/* 3rd end */}

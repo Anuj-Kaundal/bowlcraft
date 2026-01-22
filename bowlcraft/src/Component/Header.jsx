@@ -17,10 +17,10 @@ function Header() {
 
                 <div>
                     <ul className='hidden lg:flex font-bold gap-10'>
-                        <li className='cursor-pointer' onClick={()=>navigate('/menu')}>Menu</li>
-                        <li className='cursor-pointer' onClick={()=>navigate('/corporate')}>Corporate</li>
-                        <li className='cursor-pointer'onClick={()=>navigate('/about')}>About</li>
-                        <li className='cursor-pointer'onClick={()=>navigate('/blog')}>Blogs</li>
+                        <li className='cursor-pointer hover:text-[#F9CE10]' onClick={()=>navigate('/menu')}>Menu</li>
+                        <li className='cursor-pointer hover:text-[#F9CE10]' onClick={()=>navigate('/corporate')}>Corporate</li>
+                        <li className='cursor-pointer hover:text-[#F9CE10]' onClick={()=>navigate('/about')}>About</li>
+                        <li className='cursor-pointer hover:text-[#F9CE10]' onClick={()=>navigate('/blog')}>Blogs</li>
                     </ul>
                 </div>
 
@@ -29,11 +29,11 @@ function Header() {
                         Order Now
                     </button>
 
-                    <span className='text-xl cursor-pointer'>
+                    <span className='text-xl cursor-pointer hover:text-[#F9CE10]'>
                         <FaCartArrowDown />
                     </span>
 
-                    <button className='cursor-pointer font-bold mr-4 lg:mr-18'>Sign In</button>
+                    <button className='cursor-pointer hover:text-[#F9CE10] font-bold mr-4 lg:mr-18'>Sign In</button>
                 </div>
                 {
                     MobileMenu ?
@@ -44,10 +44,10 @@ function Header() {
                 MobileMenu && (
                     <div className="absolute top-full left-0 w-full bg-white lg:hidden border-t">
                         <ul className="flex flex-col items-center gap-6 py-6 font-bold">
-                            <li onClick={() => { navigate('/menu'); setMobileMenu(false)}}>Menu</li>
-                            <li onClick={() => { navigate('/corporate'); setMobileMenu(false)}}>Corporate</li>
-                            <li onClick={() => { navigate('/about'); setMobileMenu(false)}}>About</li>
-                            <li onClick={() => { navigate('/blog'); setMobileMenu(false)}}>Blogs</li>
+                            <li className='cursor-pointer hover:text-[#F9CE10]' onClick={() => { navigate('/menu'); setMobileMenu(false)}}>Menu</li>
+                            <li className='cursor-pointer hover:text-[#F9CE10]' onClick={() => { navigate('/corporate'); setMobileMenu(false)}}>Corporate</li>
+                            <li className='cursor-pointer hover:text-[#F9CE10]' onClick={() => { navigate('/about'); setMobileMenu(false)}}>About</li>
+                            <li className='cursor-pointer hover:text-[#F9CE10]' onClick={() => { navigate('/blog'); setMobileMenu(false)}}>Blogs</li>
 
                             <button className="bg-[#F9CE10] px-4 py-2 rounded-md">
                                 Order Now
@@ -55,7 +55,7 @@ function Header() {
 
                             <FaCartArrowDown className="text-xl" />
 
-                            <button>Sign In</button>
+                            <button className='cursor-pointer hover:text-[#F9CE10]'>Sign In</button>
                         </ul>
                     </div>
                 )}
