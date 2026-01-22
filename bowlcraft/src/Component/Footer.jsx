@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaLinkedinIn } from "react-icons/fa6";
 function Footer() {
   return (
     <div>
@@ -9,10 +10,9 @@ function Footer() {
         <div>
           <img src="/footerlogo.png" alt="" height={200} width={200} className='select-none pointer-events-none rounded-xl' />
           <p className='text-sm space-y-2 opacity-80 pt-5'>Bringing you fresh, global cuisine delivered<br className='hidden md:block lg:block' /> right to your door. Every bowl tells a story of<br className='hidden md:block lg:block' /> flavor, quality, and care.</p>
-          <div className='flex flex-wrap'>
-            <h1>instagram</h1>
-            <h1>facebook</h1>
-            <h1>twitter</h1>
+          <div className='flex flex-wrap gap-5 pt-5 text-2xl opacity-80'>
+            <IoLogoInstagram onClick={() => window.open('https://www.instagram.com/desi.gndeck/')} className='cursor-pointer hover:text-[#F9CE10]' />
+            <FaLinkedinIn onClick={() => window.open('https://www.linkedin.com/in/anuj-kaundal/')} className='cursor-pointer hover:text-[#F9CE10]'/>
           </div>
         </div>
         {/* first col end */}
