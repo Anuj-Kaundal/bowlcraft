@@ -33,7 +33,8 @@ function Header() {
                         <FaCartArrowDown />
                     </span>
 
-                    <button className='cursor-pointer hover:text-[#F9CE10] font-bold mr-4 lg:mr-18'>Sign In</button>
+                    <button className='cursor-pointer hover:text-[#F9CE10] font-bold mr-4' onClick={() =>navigate('/signin')}>Sign In</button>
+                    <button  className='cursor-pointer hover:text-[#F9CE10] font-bold mr-4 lg:mr-18' onClick={() =>navigate('login')}>Login</button>
                 </div>
                 {
                     MobileMenu ?
